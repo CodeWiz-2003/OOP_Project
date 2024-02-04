@@ -1,0 +1,80 @@
+\doxysection{game.\+game Class Reference}
+\hypertarget{classgame_1_1game}{}\label{classgame_1_1game}\index{game.game@{game.game}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgame_1_1game_abab5ee1d825421f748b70625db51d476}\label{classgame_1_1game_abab5ee1d825421f748b70625db51d476} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self)
+\item 
+\mbox{\hyperlink{classgame_1_1game_a3902d2a375007f4f38bada25bf248b0b}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgame_1_1game_a25f412cb854a7e6b60330b92aee682b6}\label{classgame_1_1game_a25f412cb854a7e6b60330b92aee682b6} 
+{\bfseries screen}
+\item 
+\Hypertarget{classgame_1_1game_ae6cad849db38c1be75867078b97d2346}\label{classgame_1_1game_ae6cad849db38c1be75867078b97d2346} 
+{\bfseries clock}
+\item 
+\Hypertarget{classgame_1_1game_a77d666e63004ef739c8a42e371aa7769}\label{classgame_1_1game_a77d666e63004ef739c8a42e371aa7769} 
+{\bfseries snake\+\_\+scene}
+\item 
+\Hypertarget{classgame_1_1game_a7e3e1070eb2f1498afa204343ada3726}\label{classgame_1_1game_a7e3e1070eb2f1498afa204343ada3726} 
+{\bfseries game\+Over}
+\item 
+\Hypertarget{classgame_1_1game_a78d78bbf3be7f7a5eb021d3038f958cf}\label{classgame_1_1game_a78d78bbf3be7f7a5eb021d3038f958cf} 
+{\bfseries game\+\_\+over\+\_\+scene}
+\item 
+\Hypertarget{classgame_1_1game_abb2b8d0f84aef281dcc1d4b740d489a0}\label{classgame_1_1game_abb2b8d0f84aef281dcc1d4b740d489a0} 
+{\bfseries main\+\_\+menu\+\_\+scene}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The game class represents the main game loop. It initializes the game window,
+manages the game scenes and controls the game flow.
+
+Attributes:
+-----------
+screen : pygame.Surface
+    The main screen surface where the game is displayed.
+clock : pygame.time.Clock
+    A clock object that can be used to track the amount of time.
+snake_scene : snake_scene
+    The scene for the snake game.
+gameOver : bool
+    A flag indicating whether the game is over.
+game_over_scene : game_over_scene
+    The scene displayed when the game is over.
+main_menu_scene : main_menu_scene
+    The main menu scene.
+
+Methods:
+--------
+__init__() -> None:
+    Initializes pygame, sets the game window and initializes the game scenes.
+
+run() -> None:
+    The main game loop. It controls the game flow and updates the game scenes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgame_1_1game_a3902d2a375007f4f38bada25bf248b0b}\label{classgame_1_1game_a3902d2a375007f4f38bada25bf248b0b} 
+\index{game.game@{game.game}!run@{run}}
+\index{run@{run}!game.game@{game.game}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily game.\+game.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main game loop. It controls the game flow and updates the game scenes.
+
+The game starts with the main menu scene. When the player starts the game,
+it switches to the snake scene. If the player loses, it switches to the game over scene.
+The player can restart the game from the game over scene.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+snake/game.\+py\end{DoxyCompactItemize}

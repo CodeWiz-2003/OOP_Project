@@ -1,0 +1,72 @@
+\doxysection{snake.\+snake Class Reference}
+\hypertarget{classsnake_1_1snake}{}\label{classsnake_1_1snake}\index{snake.snake@{snake.snake}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsnake_1_1snake_a971dc7af4ccfb33198545f2085f237df}\label{classsnake_1_1snake_a971dc7af4ccfb33198545f2085f237df} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, screen, block\+Size)
+\item 
+\mbox{\hyperlink{classsnake_1_1snake_a1f72ea73884c470c4f9dd066af6157cb}{update}} (self)
+\item 
+\mbox{\hyperlink{classsnake_1_1snake_a65e556e71203a1c77d4238e44f95b28f}{add\+Block}} (self, position)
+\item 
+\mbox{\hyperlink{classsnake_1_1snake_a3d9cfed2bc472202f7bc9feb99690cc6}{draw}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsnake_1_1snake_a4cd394ae24bdbded9a149d42d7253010}\label{classsnake_1_1snake_a4cd394ae24bdbded9a149d42d7253010} 
+{\bfseries positions}
+\item 
+\Hypertarget{classsnake_1_1snake_a3822a988af59cba3b80f37a691563f3e}\label{classsnake_1_1snake_a3822a988af59cba3b80f37a691563f3e} 
+{\bfseries direction}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The snake class represents the snake in the game.
+
+Attributes:
+-----------
+__screen : pygame.Surface
+    The main screen surface where the snake is displayed.
+__blockSize : int
+    The size of each block of the snake.
+positions : list
+    A list of positions of the blocks of the snake. Each position is represented as a list of two integers.
+direction : str
+    The current direction of the snake. It can be 'right', 'left', 'up', or 'down'.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsnake_1_1snake_a65e556e71203a1c77d4238e44f95b28f}\label{classsnake_1_1snake_a65e556e71203a1c77d4238e44f95b28f} 
+\index{snake.snake@{snake.snake}!addBlock@{addBlock}}
+\index{addBlock@{addBlock}!snake.snake@{snake.snake}}
+\doxysubsubsection{\texorpdfstring{addBlock()}{addBlock()}}
+{\footnotesize\ttfamily snake.\+snake.\+add\+Block (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a new block to the snake at the given position.
+\end{DoxyVerb}
+ \Hypertarget{classsnake_1_1snake_a3d9cfed2bc472202f7bc9feb99690cc6}\label{classsnake_1_1snake_a3d9cfed2bc472202f7bc9feb99690cc6} 
+\index{snake.snake@{snake.snake}!draw@{draw}}
+\index{draw@{draw}!snake.snake@{snake.snake}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily snake.\+snake.\+draw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the snake on the screen.
+\end{DoxyVerb}
+ \Hypertarget{classsnake_1_1snake_a1f72ea73884c470c4f9dd066af6157cb}\label{classsnake_1_1snake_a1f72ea73884c470c4f9dd066af6157cb} 
+\index{snake.snake@{snake.snake}!update@{update}}
+\index{update@{update}!snake.snake@{snake.snake}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily snake.\+snake.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the position of the snake based on its current direction.
+If the snake hits itself, it returns False. Otherwise, it returns True.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+snake/snake.\+py\end{DoxyCompactItemize}

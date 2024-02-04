@@ -1,0 +1,101 @@
+\doxysection{snake\+\_\+scene.\+snake\+\_\+scene Class Reference}
+\hypertarget{classsnake__scene_1_1snake__scene}{}\label{classsnake__scene_1_1snake__scene}\index{snake\_scene.snake\_scene@{snake\_scene.snake\_scene}}
+Inheritance diagram for snake\+\_\+scene.\+snake\+\_\+scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classsnake__scene_1_1snake__scene}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_a347247a16630e9ff955d62854de5b642}\label{classsnake__scene_1_1snake__scene_a347247a16630e9ff955d62854de5b642} 
+{\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, screen)
+\item 
+\mbox{\hyperlink{classsnake__scene_1_1snake__scene_a9c689d9bfcec2b44ba8daf51abcaff4d}{update}} (self)
+\item 
+\mbox{\hyperlink{classsnake__scene_1_1snake__scene_a87b415dcc835dac63862228ed81366cf}{draw\+\_\+scene}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_ad93f422972682acfaa3c877f35485210}\label{classsnake__scene_1_1snake__scene_ad93f422972682acfaa3c877f35485210} 
+{\bfseries screen}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_a95b34d4c2f1ce35f7105f963c231eabf}\label{classsnake__scene_1_1snake__scene_a95b34d4c2f1ce35f7105f963c231eabf} 
+{\bfseries block\+\_\+size}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_aa95a105424b09409ab3d1a84d9de9d14}\label{classsnake__scene_1_1snake__scene_aa95a105424b09409ab3d1a84d9de9d14} 
+{\bfseries snake}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_addee9eb0ec9d3b629e2d897ad71d5ac1}\label{classsnake__scene_1_1snake__scene_addee9eb0ec9d3b629e2d897ad71d5ac1} 
+{\bfseries font}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_a6fa070033b04418ed07c948123792fc0}\label{classsnake__scene_1_1snake__scene_a6fa070033b04418ed07c948123792fc0} 
+{\bfseries game\+\_\+over}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_a8de96b24e2150cb14fdcfab22ad21107}\label{classsnake__scene_1_1snake__scene_a8de96b24e2150cb14fdcfab22ad21107} 
+{\bfseries apple\+\_\+location}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_ad65bd19d8c806473b7a77b9905b3b524}\label{classsnake__scene_1_1snake__scene_ad65bd19d8c806473b7a77b9905b3b524} 
+{\bfseries score}
+\item 
+\Hypertarget{classsnake__scene_1_1snake__scene_a7970258d2d2bac5114da72ce8f4baca6}\label{classsnake__scene_1_1snake__scene_a7970258d2d2bac5114da72ce8f4baca6} 
+{\bfseries running}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The snake_scene class represents the snake game scene. It inherits from the game_scene class and implements the draw_scene and update methods.
+
+Attributes:
+-----------
+screen : pygame.Surface
+    The main screen surface where the game is displayed.
+block_size : int
+    The size of each block of the snake.
+snake : Snake
+    The snake object.
+font : pygame.font.Font
+    The font used to render the text.
+game_over : bool
+    A flag indicating whether the game is over.
+apple_location : list
+    The location of the apple. It is represented as a list of two integers.
+score : int
+    The current score of the game.
+running : bool
+    A flag indicating whether the game is running.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classsnake__scene_1_1snake__scene_a87b415dcc835dac63862228ed81366cf}\label{classsnake__scene_1_1snake__scene_a87b415dcc835dac63862228ed81366cf} 
+\index{snake\_scene.snake\_scene@{snake\_scene.snake\_scene}!draw\_scene@{draw\_scene}}
+\index{draw\_scene@{draw\_scene}!snake\_scene.snake\_scene@{snake\_scene.snake\_scene}}
+\doxysubsubsection{\texorpdfstring{draw\_scene()}{draw\_scene()}}
+{\footnotesize\ttfamily snake\+\_\+scene.\+snake\+\_\+scene.\+draw\+\_\+scene (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws the snake scene. It displays the snake, the apple, and the score.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame__scene_1_1game__scene_ac64fff5608ba04d954d9ef4f6f577f60}{game\+\_\+scene.\+game\+\_\+scene}}.
+
+\Hypertarget{classsnake__scene_1_1snake__scene_a9c689d9bfcec2b44ba8daf51abcaff4d}\label{classsnake__scene_1_1snake__scene_a9c689d9bfcec2b44ba8daf51abcaff4d} 
+\index{snake\_scene.snake\_scene@{snake\_scene.snake\_scene}!update@{update}}
+\index{update@{update}!snake\_scene.snake\_scene@{snake\_scene.snake\_scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily snake\+\_\+scene.\+snake\+\_\+scene.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the user input, updates the snake and the apple, and returns the running and game_over flags.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \mbox{\hyperlink{classgame__scene_1_1game__scene_a7ac4fbd752bcaf19401c9f7473275fd7}{game\+\_\+scene.\+game\+\_\+scene}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+snake/snake\+\_\+scene.\+py\end{DoxyCompactItemize}
